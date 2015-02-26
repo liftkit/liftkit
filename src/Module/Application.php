@@ -73,25 +73,24 @@
 		{
 			$this->scriptLoader = $this->container->getObject('Application.ScriptLoader');
 			$this->configLoader = $this->container->getObject('Application.ConfigLoader');
-
-			$this->config = $this->container->getObject('Application.Config');
+			$this->config       = $this->container->getObject('Application.Config');
 		}
 
 
 		protected function initializeDatabase ()
 		{
-			$this->scriptLoader->load('dependency-injection/database', array('container' => $this->container));
+			$this->loadDependencyInjectionConfig('dependency-injection/database');
 
 			$this->database = $this->container->getObject('Application.Database.Connection');
-			$this->schema = $this->container->getObject('Application.Database.Schema');
+			$this->schema   = $this->container->getObject('Application.Database.Schema');
 
-			$this->scriptLoader->load('database/schema/default', array('schema' => $this->schema));
+			$this->loadSchemaConfig('database/schema/default');
 		}
 		
 		
 		protected function initializeControllers ()
 		{
-			$this->scriptLoader->load('dependency-injection/controller', array('container' => $this->container));
+			$this->loadDependencyInjectionConfig('dependency-injection/controller');
 		}
 
 
@@ -99,12 +98,36 @@
 		{
 			$this->router = $this->container->getObject('Application.Router');
 
+			$this->loadRouteConfig('routes/default');
+		}
+		
+		
+		protected function loadDependencyInjectionConfig ($configFile)
+		{
 			$this->scriptLoader->load(
-				'routes/default',
-				array(
+				$configFile, 
+				['container' => $this->container]
+			);
+		}
+		
+		
+		protected function loadSchemaConfig ($configFile)
+		{
+			$this->scriptLoader->load(
+				$configFile, 
+				['schema' => $this->schema]
+			);
+		}
+		
+		
+		protected function loadRouteConfig ($configFile)
+		{
+			$this->scriptLoader->load(
+				$configFile,
+				[
 					'container' => $this->container,
 					'router'    => $this->router,
-				)
+				]
 			);
 		}
 	}

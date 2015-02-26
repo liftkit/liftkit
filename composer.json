@@ -19,6 +19,7 @@
 		}
 	},
 	"require": {
+		"php": "5.4.*",
 		"liftkit/input": "1.*",
 		"liftkit/dependency-injection": "1.*",
 		"liftkit/database": "1.*",
