@@ -56,7 +56,7 @@
 
 		public function execute ($uri)
 		{
-			$this->router->execute($uri);
+			return $this->router->execute($uri);
 		}
 
 
@@ -64,6 +64,7 @@
 		{
 			$this->initializeDefault();
 			$this->initializeDatabase();
+			$this->initializeControllers();
 			$this->initializeRouter();
 		}
 
@@ -81,16 +82,16 @@
 		{
 			$this->scriptLoader->load('dependency-injection/database', array('container' => $this->container));
 
-			$this->database = $this->container->getObject(
-				'Application.Database.Connection',
-				array(
-					$this->configLoader->load('database/connection/default')
-				)
-			);
-
+			$this->database = $this->container->getObject('Application.Database.Connection');
 			$this->schema = $this->container->getObject('Application.Database.Schema');
 
 			$this->scriptLoader->load('database/schema/default', array('schema' => $this->schema));
+		}
+		
+		
+		protected function initializeControllers ()
+		{
+			$this->scriptLoader->load('dependency-injection/controller', array('container' => $this->container));
 		}
 
 

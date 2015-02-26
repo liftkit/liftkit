@@ -20,12 +20,23 @@
 			return new Cache;
 		}
 	);
+	
+	
+	$container->setRule(
+		'Application.Database.Config',
+		function (Container $container)
+		{
+			return $container->getObject('Application.ConfigLoader')->load('database/connection/default');
+		}
+	);
 
 
 	$container->setSingletonRule(
 		'Application.Database.Connection',
-		function (Container $container, Config $config)
+		function (Container $container)
 		{
+			$config = $container->getObject('Application.Database.Config');
+			
 			return new MySQL(
 				$container,
 				$container->getObject('Application.Database.Cache'),
