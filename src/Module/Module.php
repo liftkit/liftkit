@@ -16,7 +16,7 @@
 	use LiftKit\Router\Router;
 
 
-	class Module extends LiftKitModule
+	abstract class Module extends LiftKitModule
 	{
 		/**
 		 * @var ScriptLoader
