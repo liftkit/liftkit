@@ -3,9 +3,7 @@
 
 	require_once(__DIR__ . '/vendor/autoload.php');
 
-
 	use LiftKit\DependencyInjection\Container\Container;
-
 	use Application\Module\Application;
 
 
@@ -19,5 +17,5 @@
 	// Initialize Module
 
 	$applicationModule = new Application($container);
-	
-	$applicationModule->execute($_SERVER['REQUEST_URI']);
+
+	$applicationModule->execute($_SERVER['REQUEST_URI'])->render();

@@ -4,7 +4,6 @@
 	namespace Application\Controller;
 
 	use LiftKit\Controller\Controller as LiftKitController;
-	use LiftKit\Application\Application;
 	use LiftKit\DependencyInjection\Container\Container;
 
 	use LiftKit\Loader\File\View as ViewLoader;
