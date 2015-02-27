@@ -20,13 +20,14 @@
 			return new Cache;
 		}
 	);
-	
-	
+
+
 	$container->setRule(
 		'Application.Database.Config',
 		function (Container $container)
 		{
-			return $container->getObject('Application.ConfigLoader')->load('database/connection/default');
+			return $container->getObject('Application.ConfigLoader')
+				->load('database/connection/' . $container->getParameter('Application.Environment'));
 		}
 	);
 
@@ -36,7 +37,7 @@
 		function (Container $container)
 		{
 			$config = $container->getObject('Application.Database.Config');
-			
+
 			return new MySQL(
 				$container,
 				$container->getObject('Application.Database.Cache'),
@@ -54,8 +55,7 @@
 		function (Container $container)
 		{
 			$connection = $container->getObject('Application.Database.Connection');
-			
+
 			return new Schema($connection);
 		}
 	);
-	

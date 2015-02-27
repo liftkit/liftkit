@@ -63,6 +63,7 @@
 		protected function initialize ()
 		{
 			$this->initializeDefault();
+			$this->initializeEnvironment();
 			$this->initializeDatabase();
 			$this->initializeControllers();
 			$this->initializeRouter();
@@ -77,6 +78,14 @@
 		}
 
 
+		public function initializeEnvironment ()
+		{
+			$this->config['environment'] = $this->scriptLoader->load('environment/environment', ['container' => $this->container]);
+			$this->scriptLoader->load('errors/' . $this->config['environment']);
+			$this->container->setParameter('Application.Environment', $this->config['environment']);
+		}
+
+
 		protected function initializeDatabase ()
 		{
 			$this->loadDependencyInjectionConfig('dependency-injection/database');
@@ -86,8 +95,8 @@
 
 			$this->loadSchemaConfig('database/schema/default');
 		}
-		
-		
+
+
 		protected function initializeControllers ()
 		{
 			$this->loadDependencyInjectionConfig('dependency-injection/controller');
@@ -100,26 +109,26 @@
 
 			$this->loadRouteConfig('routes/default');
 		}
-		
-		
+
+
 		protected function loadDependencyInjectionConfig ($configFile)
 		{
 			$this->scriptLoader->load(
-				$configFile, 
+				$configFile,
 				['container' => $this->container]
 			);
 		}
-		
-		
+
+
 		protected function loadSchemaConfig ($configFile)
 		{
 			$this->scriptLoader->load(
-				$configFile, 
+				$configFile,
 				['schema' => $this->schema]
 			);
 		}
-		
-		
+
+
 		protected function loadRouteConfig ($configFile)
 		{
 			$this->scriptLoader->load(
