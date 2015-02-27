@@ -50,12 +50,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/liftkit/core.git",
-                "reference": "00340dea4042faa24f2a2285b0e746612fa3cd4b"
+                "reference": "1ccfefe0ab546f56de99183e3b349ae87b852c68"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liftkit/core/zipball/00340dea4042faa24f2a2285b0e746612fa3cd4b",
-                "reference": "00340dea4042faa24f2a2285b0e746612fa3cd4b",
+                "url": "https://api.github.com/repos/liftkit/core/zipball/1ccfefe0ab546f56de99183e3b349ae87b852c68",
+                "reference": "1ccfefe0ab546f56de99183e3b349ae87b852c68",
                 "shasum": ""
             },
             "require": {
@@ -88,7 +88,7 @@
                 }
             ],
             "description": "LiftKit Core Libraries",
-            "time": "2015-02-26 21:15:34"
+            "time": "2015-02-27 00:24:36"
         },
         {
             "name": "liftkit/database",

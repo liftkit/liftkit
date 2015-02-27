@@ -18,9 +18,9 @@
 		protected $viewLoader;
 
 
-		public function __construct (Application $application, Container $container)
+		public function __construct (Container $container)
 		{
-			parent::__construct($application, $container);
+			parent::__construct($container);
 
 			$this->viewLoader = $this->container->getObject('Application.ViewLoader');
 		}

@@ -14,9 +14,6 @@
 		'Application.Controller.Index',
 		function (Container $container)
 		{
-			return new IndexController(
-				$container->getObject('Application.Application'),
-				$container
-			);
+			return new IndexController($container);
 		}
 	);
