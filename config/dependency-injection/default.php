@@ -6,7 +6,7 @@
 
 	use LiftKit\Application\Application as Application;
 	use LiftKit\Config\Config;
-	use LiftKit\Router\Router;
+	use LiftKit\Router\Http as HttpRouter;
 
 
 	$container->setSingletonRule(
@@ -58,6 +58,6 @@
 		'Application.Router',
 		function ()
 		{
-			return new Router;
+			return new HttpRouter;
 		}
 	);

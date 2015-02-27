@@ -53,6 +53,9 @@
 		'Application.Database.Schema',
 		function (Container $container)
 		{
-			return new Schema($container->getObject('Application.Database.Connection'));
+			$connection = $container->getObject('Application.Database.Connection');
+			
+			return new Schema($connection);
 		}
 	);
+	

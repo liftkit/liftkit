@@ -1,6 +1,7 @@
 <?php
 
 	use LiftKit\Database\Schema\Schema;
+	
 
 	/**
 	 * @var Schema $schema

@@ -12,8 +12,9 @@
 	 */
 
 
-	$router->registerRoute(
-		new ControllerRoute('/', $container->getObject('Application.Controller.Index')),
+	$router->registerController(
+		'/', 
+		$container->getObject('Application.Controller.Index'),
 		'Application.Index'
 	);
 

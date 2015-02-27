@@ -19,3 +19,5 @@
 	// Initialize Module
 
 	$applicationModule = new Application($container);
+	
+	$applicationModule->execute($_SERVER['REQUEST_URI']);
