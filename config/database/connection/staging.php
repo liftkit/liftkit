@@ -1,5 +1,8 @@
 <?php
 
+	/**
+	 * Staging database credentials
+	 */
 
 	return [
 		'host' => 'localhost',

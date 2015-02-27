@@ -1,5 +1,8 @@
 <?php
 
+	/**
+	 * Production database credentials
+	 */
 
 	return [
 		'host' => 'localhost',

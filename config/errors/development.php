@@ -1,5 +1,8 @@
 <?php
 
+	/**
+	 * Development i.e. local error reporting config
+	 */
 
 	error_reporting(E_ALL & ~ E_NOTICE);
 
