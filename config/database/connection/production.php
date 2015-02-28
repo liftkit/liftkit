@@ -1,7 +1,7 @@
 <?php
 
 	/**
-	 * Production database credentials.
+	 * Production database settings
 	 */
 
 	return [
@@ -10,7 +10,7 @@
 		'port'     => '',
 		'user'     => '',
 		'password' => '',
-		'schema'   => '',
+		'dbname'   => '',
 		'charset'  => 'utf8',
 		'options'  => [],
 	];

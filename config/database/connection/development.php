@@ -1,7 +1,7 @@
 <?php
 
 	/**
-	 * Development i.e. local database credentials.
+	 * Development (i.e. local) database settings
 	 */
 
 	return [
@@ -10,7 +10,7 @@
 		'port'     => '',
 		'user'     => 'root',
 		'password' => 'root',
-		'schema'   => 'test',
+		'dbname'   => 'test',
 		'charset'  => 'utf8',
 		'options'  => [],
 	];

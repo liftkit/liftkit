@@ -44,7 +44,7 @@
 					$config['driver'] 
 						. ':host=' . $config['host'] 
 						. ';port=' . $config['port'] 
-						. ';dbname=' . $config['schema'] 
+						. ';dbname=' . $config['dbname'] 
 						. ';charset=' . $config['charset'],
 					$config['user'],
 					$config['password'],
