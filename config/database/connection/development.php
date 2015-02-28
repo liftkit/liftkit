@@ -5,8 +5,9 @@
 	 */
 
 	return [
-		'host' => '127.0.0.1',
-		'user' => 'root',
+		'host'     => '127.0.0.1',
+		'user'     => 'root',
 		'password' => 'root',
-		'schema' => 'test',
+		'schema'   => 'test',
+		'charset'  => 'utf8',
 	];

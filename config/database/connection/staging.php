@@ -1,12 +1,13 @@
 <?php
 
 	/**
-	 * Staging database credentials
+	 * Staging database credentials.
 	 */
 
 	return [
-		'host' => 'localhost',
-		'user' => '',
+		'host'     => 'localhost',
+		'user'     => '',
 		'password' => '',
-		'schema' => '',
+		'schema'   => '',
+		'charset'  => 'utf8',
 	];
