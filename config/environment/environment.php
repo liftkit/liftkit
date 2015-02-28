@@ -11,7 +11,7 @@
 	 *
 	 * By default, you Application's module will load the config files found in config/errors/ and
 	 * config/database/connection/ with the same name as the environment string. These files are
-	 * used for setting error reporting configuration and database connection credentials,
+	 * used for setting error reporting configuration and database connection configuration,
 	 * respectively.
 	 *
 	 * You can create your own environment-dependent configurations by extending
