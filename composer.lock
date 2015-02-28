@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d35ddc4641712bfac5a43c8b5e63ae6d",
+    "hash": "84ee6154b140f88377fd94e08b5dcb37",
     "packages": [
         {
             "name": "liftkit/collection",
@@ -177,6 +177,48 @@
             "time": "2015-02-26 18:38:14"
         },
         {
+            "name": "liftkit/document",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liftkit/document.git",
+                "reference": "26c6d7222ffdbea34a825dd89ff3d5f3b53479e6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/liftkit/document/zipball/26c6d7222ffdbea34a825dd89ff3d5f3b53479e6",
+                "reference": "26c6d7222ffdbea34a825dd89ff3d5f3b53479e6",
+                "shasum": ""
+            },
+            "require": {
+                "liftkit/output": "1.*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.5.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "LiftKit\\": "src/",
+                    "LiftKit\\Tests\\Unit\\": "tests/unit/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGP-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Ryan Williams",
+                    "email": "rwilliams@stream9.net",
+                    "homepage": "https://www.stream9.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "LiftKit adding elements to HTML documents",
+            "time": "2015-02-27 23:09:14"
+        },
+        {
             "name": "liftkit/form",
             "version": "v1.0.1",
             "source": {
@@ -263,6 +305,45 @@
             "time": "2015-02-26 18:50:56"
         },
         {
+            "name": "liftkit/output",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liftkit/output.git",
+                "reference": "f149ecbe14065824631722d92fdc627693f1a732"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/liftkit/output/zipball/f149ecbe14065824631722d92fdc627693f1a732",
+                "reference": "f149ecbe14065824631722d92fdc627693f1a732",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.5.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "LiftKit\\": "src/",
+                    "LiftKit\\Tests\\Unit\\": "tests/unit/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGP-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Ryan Williams",
+                    "email": "rwilliams@stream9.net",
+                    "homepage": "https://www.stream9.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "LiftKit library for sanitizing output",
+            "time": "2015-02-27 22:18:18"
+        },
+        {
             "name": "liftkit/token",
             "version": "v1.0.0",
             "source": {
@@ -300,6 +381,40 @@
             ],
             "description": "Library for working with string identifiers",
             "time": "2015-02-22 15:11:11"
+        },
+        {
+            "name": "martinlindhe/http_response_code_compat",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/martinlindhe/http_response_code_compat.git",
+                "reference": "310eef893a117058884026b0111ab30a51942b67"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/martinlindhe/http_response_code_compat/zipball/310eef893a117058884026b0111ab30a51942b67",
+                "reference": "310eef893a117058884026b0111ab30a51942b67",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "lib/http_response_code_compat.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Martin Lindhe",
+                    "email": "martin@ubique.se"
+                }
+            ],
+            "description": "A compatibility library for the php 5.4 function http_response_code",
+            "homepage": "https://github.com/martinlindhe/http_response_code_compat",
+            "time": "2014-06-11 14:59:19"
         }
     ],
     "packages-dev": [

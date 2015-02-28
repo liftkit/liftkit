@@ -23,7 +23,10 @@
 		"liftkit/dependency-injection": "1.*",
 		"liftkit/database": "1.*",
 		"liftkit/core": "dev-master",
-		"liftkit/form": "1.*"
+		"liftkit/form": "1.*",
+		"liftkit/output": "1.*",
+		"liftkit/document": "1.*",
+		"martinlindhe/http_response_code_compat": "1.0.0"
 	},
 	"require-dev": {
 		"phpunit/phpunit": "4.5.*"

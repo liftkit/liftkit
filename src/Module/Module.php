@@ -4,7 +4,8 @@
 	namespace Application\Module;
 
 	use LiftKit\Module\Module as LiftKitModule;
-
+	
+	use LiftKit\Application\Application;
 	use LiftKit\Loader\File\Script as ScriptLoader;
 	use LiftKit\Loader\File\Config as ConfigLoader;
 
@@ -37,6 +38,12 @@
 
 
 		/**
+		 * @var Application
+		 */
+		protected $application;
+
+
+		/**
 		 * @var DatabaseConnection
 		 */
 		protected $database;
@@ -65,6 +72,8 @@
 			$this->initializeDefault();
 			$this->initializeEnvironment();
 			$this->initializeDatabase();
+			$this->initializeUtilities();
+			$this->initializeHooks();
 			$this->initializeControllers();
 			$this->initializeRouter();
 		}
@@ -75,6 +84,7 @@
 			$this->scriptLoader = $this->container->getObject('Application.ScriptLoader');
 			$this->configLoader = $this->container->getObject('Application.ConfigLoader');
 			$this->config       = $this->container->getObject('Application.Config');
+			$this->application  = $this->container->getObject('Application.Application');
 		}
 
 
@@ -94,6 +104,18 @@
 			$this->schema   = $this->container->getObject('Application.Database.Schema');
 
 			$this->loadSchemaConfig('database/schema/default');
+		}
+		
+		
+		protected function initializeUtilities ()
+		{
+			$this->loadDependencyInjectionConfig('dependency-injection/utility');
+		}
+		
+		
+		protected function initializeHooks ()
+		{
+			$this->loadHooksConfig('hooks/default');
 		}
 
 
@@ -136,6 +158,18 @@
 				[
 					'container' => $this->container,
 					'router'    => $this->router,
+				]
+			);
+		}
+
+
+		protected function loadHooksConfig ($configFile)
+		{
+			$this->scriptLoader->load(
+				$configFile,
+				[
+					'application' => $this->application,
+					'module'      => $this,
 				]
 			);
 		}
