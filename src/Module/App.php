@@ -14,13 +14,13 @@
 				'ExampleModule',
 				$this->loadModule('liftkit/example-module/example-module')
 			);
-			
-			parent::loadModules();
 		}
 		
 		
 		protected function modulesLoaded ()
 		{
+			parent::modulesLoaded();
+			
 			$this->loadDependencyInjectionConfig('dependency-injection/example-module');
 		}
 	}

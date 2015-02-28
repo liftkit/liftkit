@@ -82,7 +82,9 @@
 			$this->initializeHooks();
 			$this->initializeControllers();
 			$this->initializeRouter();
+			
 			$this->loadModules();
+			$this->modulesLoaded();
 		}
 
 
@@ -143,17 +145,14 @@
 		
 		protected function loadModules ()
 		{	
-			foreach ($this->getSubModules() as $subModule) {
-				$subModule->initialize();
-			}
-			
-			$this->modulesLoaded();
 		}
 		
 		
 		protected function modulesLoaded ()
 		{
-			
+			foreach ($this->getSubModules() as $subModule) {
+				$subModule->initialize();
+			}
 		}
 
 
