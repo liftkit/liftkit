@@ -18,11 +18,13 @@
 	 * \Application\Module\Module in \Application\Module\Application.
 	 */
 
+	
+	$hostName = php_uname('n');
 
-	if (strstr(php_uname('n'), '.local')) {
+	if (strstr($hostName, '.local')) {
 		return 'development';
 
-	} else if (strstr(php_uname('n'), 'dev')) {
+	} else if (strstr($hostName, 'dev')) {
 		return 'staging';
 
 	} else {
