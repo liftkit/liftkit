@@ -28,6 +28,15 @@
 
 
 	$container->setSingletonRule(
+		'App.ModuleLoader',
+		function ()
+		{
+			return new ScriptLoader(dirname(dirname(__DIR__)) . '/vendor/', '.php');
+		}
+	);
+
+
+	$container->setSingletonRule(
 		'App.ViewLoader',
 		function ()
 		{

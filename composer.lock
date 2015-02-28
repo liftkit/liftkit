@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b07396b754e0a5600a965c1489567e83",
+    "hash": "698552e1b23d7bdbe0f3769bf53abe45",
     "packages": [
         {
             "name": "liftkit/collection",
@@ -50,12 +50,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/liftkit/core.git",
-                "reference": "726ab2eb37fbb282bf7f7a9486f1d3089ace52d8"
+                "reference": "5966c6b4d9f6989c9812ea4f77a4a75a75493ca6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liftkit/core/zipball/726ab2eb37fbb282bf7f7a9486f1d3089ace52d8",
-                "reference": "726ab2eb37fbb282bf7f7a9486f1d3089ace52d8",
+                "url": "https://api.github.com/repos/liftkit/core/zipball/5966c6b4d9f6989c9812ea4f77a4a75a75493ca6",
+                "reference": "5966c6b4d9f6989c9812ea4f77a4a75a75493ca6",
                 "shasum": ""
             },
             "require": {
@@ -88,7 +88,7 @@
                 }
             ],
             "description": "LiftKit Core Libraries",
-            "time": "2015-02-28 19:15:37"
+            "time": "2015-02-28 20:39:27"
         },
         {
             "name": "liftkit/database",
@@ -217,6 +217,51 @@
             ],
             "description": "LiftKit adding elements to HTML documents",
             "time": "2015-02-27 23:09:14"
+        },
+        {
+            "name": "liftkit/example-module",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liftkit/example-module.git",
+                "reference": "7df99ec512b6110b29fe536f5fe1e2ad62fc00f5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/liftkit/example-module/zipball/7df99ec512b6110b29fe536f5fe1e2ad62fc00f5",
+                "reference": "7df99ec512b6110b29fe536f5fe1e2ad62fc00f5",
+                "shasum": ""
+            },
+            "require": {
+                "liftkit/core": "dev-master",
+                "liftkit/document": "1.*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.5.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ExampleModule\\": "src/",
+                    "ExampleModule\\Tests\\Helpers\\": "tests/helpers/",
+                    "ExampleModule\\Tests\\Stub\\": "tests/stub/",
+                    "ExampleModule\\Tests\\Unit\\": "tests/unit/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGP-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Ryan Williams",
+                    "email": "rwilliams@stream9.net",
+                    "homepage": "https://www.stream9.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "LiftKit example module",
+            "time": "2015-02-28 20:42:27"
         },
         {
             "name": "liftkit/form",
@@ -1373,7 +1418,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "liftkit/core": 20
+        "liftkit/core": 20,
+        "liftkit/example-module": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

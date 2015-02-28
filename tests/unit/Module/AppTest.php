@@ -82,4 +82,28 @@
 				(string) $response
 			);
 		}
+		
+		
+		public function testExampleModulePage1 ()
+		{
+			$module = $this->initializeModule();
+			$response = $module->execute('/example/page1');
+			
+			$this->assertEquals(
+				'page1',
+				(string) $response
+			);
+		}
+		
+		
+		public function testExampleModulePage2 ()
+		{
+			$module = $this->initializeModule();
+			$response = $module->execute('/example/page2');
+			
+			$this->assertEquals(
+				'overridden',
+				(string) $response
+			);
+		}
 	}

@@ -29,6 +29,12 @@
 		 * @var ConfigLoader
 		 */
 		protected $configLoader;
+		
+		
+		/**
+		 * @var ScriptLoader
+		 */
+		protected $moduleLoader;
 
 
 		/**
@@ -76,6 +82,7 @@
 			$this->initializeHooks();
 			$this->initializeControllers();
 			$this->initializeRouter();
+			$this->loadModules();
 		}
 
 
@@ -83,6 +90,7 @@
 		{
 			$this->scriptLoader = $this->container->getObject('App.ScriptLoader');
 			$this->configLoader = $this->container->getObject('App.ConfigLoader');
+			$this->moduleLoader = $this->container->getObject('App.ModuleLoader');
 			$this->config       = $this->container->getObject('App.Config');
 			$this->application  = $this->container->getObject('App.Application');
 		}
@@ -131,6 +139,22 @@
 
 			$this->loadRouteConfig('routes/default');
 		}
+		
+		
+		protected function loadModules ()
+		{	
+			foreach ($this->getSubModules() as $subModule) {
+				$subModule->initialize();
+			}
+			
+			$this->modulesLoaded();
+		}
+		
+		
+		protected function modulesLoaded ()
+		{
+			
+		}
 
 
 		protected function loadDependencyInjectionConfig ($configFile)
@@ -171,6 +195,15 @@
 					'application' => $this->application,
 					'module'      => $this,
 				]
+			);
+		}
+		
+		
+		protected function loadModule ($moduleFile)
+		{
+			return $this->moduleLoader->load(
+				$moduleFile,
+				['container' => $this->container]
 			);
 		}
 	}
