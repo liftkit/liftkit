@@ -14,7 +14,7 @@
 	 * used for setting error reporting configuration and database connection credentials,
 	 * respectively.
 	 *
-	 * You can create your own environment-dependency configurations by extending
+	 * You can create your own environment-dependent configurations by extending
 	 * \Application\Module\Module in \Application\Module\Application.
 	 */
 
