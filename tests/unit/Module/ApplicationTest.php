@@ -49,6 +49,40 @@
 				(string) $response
 			);
 		}
+		
+		
+		public function test404 ()
+		{
+			$module = $this->getModule();
+			$response = $module->execute('/trigger-404');
+			
+			$this->assertContains(
+				'<h1>404: Not Found</h1>',
+				(string) $response
+			);
+			
+			$this->assertContains(
+				'<title>404: Not Found</title>',
+				(string) $response
+			);
+		}
+		
+		
+		public function test500 ()
+		{
+			$module = $this->getModule();
+			$response = $module->execute('/trigger-500');
+			
+			$this->assertContains(
+				'<h1>500: Internal Server Error</h1>',
+				(string) $response
+			);
+			
+			$this->assertContains(
+				'<title>500: Internal Server Error</title>',
+				(string) $response
+			);
+		}
 
 
 		protected function getModule ()
