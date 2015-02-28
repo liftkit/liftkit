@@ -7,6 +7,7 @@
 	return [
 		'driver'   => 'mysql',
 		'host'     => 'localhost',
+		'port'     => '',
 		'user'     => '',
 		'password' => '',
 		'schema'   => '',

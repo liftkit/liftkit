@@ -41,7 +41,11 @@
 				$container,
 				$container->getObject('App.Database.Cache'),
 				new PDO(
-					$config['driver'] . ':host=' . $config['host'] . ';dbname=' . $config['schema'] . ';charset=' . $config['charset'],
+					$config['driver'] 
+						. ':host=' . $config['host'] 
+						. ';port=' . $config['port'] 
+						. ';dbname=' . $config['schema'] 
+						. ';charset=' . $config['charset'],
 					$config['user'],
 					$config['password'],
 					$config['options']
