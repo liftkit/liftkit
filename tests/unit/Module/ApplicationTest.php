@@ -22,9 +22,31 @@
 			$module = $this->getModule();
 			$response = $module->execute('/');
 			
-			$this->assertEquals(
-				(string) $response,
-				file_get_contents(dirname(dirname(dirname(__DIR__))) . '/views/index.php')
+			$this->assertContains(
+				'<h1>Welcome to LiftKit</h1>',
+				(string) $response
+			);
+			
+			$this->assertContains(
+				'<title>Welcome to LiftKit</title>',
+				(string) $response
+			);
+		}
+		
+		
+		public function test403 ()
+		{
+			$module = $this->getModule();
+			$response = $module->execute('/trigger-403');
+			
+			$this->assertContains(
+				'<h1>403: Forbidden</h1>',
+				(string) $response
+			);
+			
+			$this->assertContains(
+				'<title>403: Forbidden</title>',
+				(string) $response
 			);
 		}
 
