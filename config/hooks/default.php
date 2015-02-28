@@ -1,14 +1,14 @@
 <?php
 
 
-	use Application\Module\Application as ApplicationModule;
+	use App\Module\App as AppModule;
 	use LiftKit\Application\Application;
 	use LiftKit\Application\Hook\Action;
 	
 	
 	/**
 	 * @var Application $application
-	 * @var ApplicationModule $module
+	 * @var AppModule $module
 	 */
 	 
 	 

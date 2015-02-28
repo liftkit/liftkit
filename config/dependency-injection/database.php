@@ -14,7 +14,7 @@
 
 
 	$container->setRule(
-		'Application.Database.Cache',
+		'App.Database.Cache',
 		function ()
 		{
 			return new Cache;
@@ -23,24 +23,24 @@
 
 
 	$container->setRule(
-		'Application.Database.Config',
+		'App.Database.Config',
 		function (Container $container)
 		{
-			return $container->getObject('Application.ConfigLoader')
-				->load('database/connection/' . $container->getParameter('Application.Environment'));
+			return $container->getObject('App.ConfigLoader')
+				->load('database/connection/' . $container->getParameter('App.Environment'));
 		}
 	);
 
 
 	$container->setSingletonRule(
-		'Application.Database.Connection',
+		'App.Database.Connection',
 		function (Container $container)
 		{
-			$config = $container->getObject('Application.Database.Config');
+			$config = $container->getObject('App.Database.Config');
 
 			return new MySQL(
 				$container,
-				$container->getObject('Application.Database.Cache'),
+				$container->getObject('App.Database.Cache'),
 				$config['host'],
 				$config['user'],
 				$config['password'],
@@ -51,10 +51,10 @@
 
 
 	$container->setSingletonRule(
-		'Application.Database.Schema',
+		'App.Database.Schema',
 		function (Container $container)
 		{
-			$connection = $container->getObject('Application.Database.Connection');
+			$connection = $container->getObject('App.Database.Connection');
 
 			return new Schema($connection);
 		}

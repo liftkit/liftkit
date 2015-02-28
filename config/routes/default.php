@@ -13,7 +13,7 @@
 
 	$router->registerController(
 		'/',
-		$container->getObject('Application.Controller.Index'),
-		'Application.Index'
+		$container->getObject('App.Controller.Index'),
+		'App.Index'
 	);
 

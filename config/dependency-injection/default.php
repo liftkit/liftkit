@@ -10,7 +10,7 @@
 
 
 	$container->setSingletonRule(
-		'Application.ConfigLoader',
+		'App.ConfigLoader',
 		function ()
 		{
 			return new ConfigLoader(dirname(dirname(__DIR__)) . '/config/', '.php');
@@ -19,7 +19,7 @@
 
 
 	$container->setSingletonRule(
-		'Application.ScriptLoader',
+		'App.ScriptLoader',
 		function ()
 		{
 			return new ScriptLoader(dirname(dirname(__DIR__)) . '/config/', '.php');
@@ -28,7 +28,7 @@
 
 
 	$container->setSingletonRule(
-		'Application.ViewLoader',
+		'App.ViewLoader',
 		function ()
 		{
 			return new ViewLoader(dirname(dirname(__DIR__)) . '/views/', '.php');
@@ -37,7 +37,7 @@
 
 
 	$container->setSingletonRule(
-		'Application.Config',
+		'App.Config',
 		function ()
 		{
 			return new Config;
@@ -46,7 +46,7 @@
 
 
 	$container->setSingletonRule(
-		'Application.Application',
+		'App.Application',
 		function ()
 		{
 			return new Application;
@@ -55,7 +55,7 @@
 
 
 	$container->setSingletonRule(
-		'Application.Router',
+		'App.Router',
 		function ()
 		{
 			return new HttpRouter;

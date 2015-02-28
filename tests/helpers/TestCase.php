@@ -1,7 +1,7 @@
 <?php
 
 
-	namespace Application\Tests\Helpers;
+	namespace App\Tests\Helpers;
 
 	use LiftKit\DependencyInjection\Container\Container;
 	use PHPUnit_Framework_TestCase;

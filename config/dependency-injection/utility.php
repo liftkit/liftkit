@@ -11,7 +11,7 @@
 
 
 	$container->setRule(
-		'Application.Utility.Document',
+		'App.Utility.Document',
 		function ()
 		{
 			return new HtmlDocument;

@@ -1,7 +1,7 @@
 <?php
 
 
-	namespace Application\Controller;
+	namespace App\Controller;
 
 	use LiftKit\Controller\Controller as LiftKitController;
 	use LiftKit\DependencyInjection\Container\Container;
@@ -36,8 +36,8 @@
 		{
 			parent::__construct($container);
 
-			$this->application = $this->container->getObject('Application.Application');
-			$this->viewLoader  = $this->container->getObject('Application.ViewLoader');
-			$this->document    = $this->container->getObject('Application.Utility.Document');
+			$this->application = $this->container->getObject('App.Application');
+			$this->viewLoader  = $this->container->getObject('App.ViewLoader');
+			$this->document    = $this->container->getObject('App.Utility.Document');
 		}
 	}

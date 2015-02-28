@@ -1,7 +1,7 @@
 <?php
 
 
-	namespace Application\Module;
+	namespace App\Module;
 
 	use LiftKit\Module\Module as LiftKitModule;
 	
@@ -81,10 +81,10 @@
 
 		protected function initializeDefault ()
 		{
-			$this->scriptLoader = $this->container->getObject('Application.ScriptLoader');
-			$this->configLoader = $this->container->getObject('Application.ConfigLoader');
-			$this->config       = $this->container->getObject('Application.Config');
-			$this->application  = $this->container->getObject('Application.Application');
+			$this->scriptLoader = $this->container->getObject('App.ScriptLoader');
+			$this->configLoader = $this->container->getObject('App.ConfigLoader');
+			$this->config       = $this->container->getObject('App.Config');
+			$this->application  = $this->container->getObject('App.Application');
 		}
 
 
@@ -92,7 +92,7 @@
 		{
 			$this->config['environment'] = $this->scriptLoader->load('environment/environment', ['container' => $this->container]);
 			$this->scriptLoader->load('errors/' . $this->config['environment']);
-			$this->container->setParameter('Application.Environment', $this->config['environment']);
+			$this->container->setParameter('App.Environment', $this->config['environment']);
 		}
 
 
@@ -100,8 +100,8 @@
 		{
 			$this->loadDependencyInjectionConfig('dependency-injection/database');
 
-			$this->database = $this->container->getObject('Application.Database.Connection');
-			$this->schema   = $this->container->getObject('Application.Database.Schema');
+			$this->database = $this->container->getObject('App.Database.Connection');
+			$this->schema   = $this->container->getObject('App.Database.Schema');
 
 			$this->loadSchemaConfig('database/schema/default');
 		}
@@ -127,7 +127,7 @@
 
 		protected function initializeRouter ()
 		{
-			$this->router = $this->container->getObject('Application.Router');
+			$this->router = $this->container->getObject('App.Router');
 
 			$this->loadRouteConfig('routes/default');
 		}

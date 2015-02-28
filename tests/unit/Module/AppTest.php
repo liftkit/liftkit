@@ -1,13 +1,13 @@
 <?php
 
 
-	namespace Application\Tests\Unit\Module;
+	namespace App\Tests\Unit\Module;
 
-	use Application\Module\Application;
-	use Application\Tests\Helpers\TestCase;
+	use App\Module\App;
+	use App\Tests\Helpers\TestCase;
 
 
-	class ApplicationTest extends TestCase
+	class AppTest extends TestCase
 	{
 
 
@@ -87,6 +87,6 @@
 
 		protected function getModule ()
 		{
-			return new Application($this->container);
+			return new App($this->container);
 		}
 	}

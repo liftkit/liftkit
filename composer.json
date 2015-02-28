@@ -12,10 +12,10 @@
 	],
 	"autoload": {
 		"psr-4": {
-			"Application\\": "src/",
-			"Application\\Tests\\Helpers\\": "tests/helpers/",
-			"Application\\Tests\\Stub\\": "tests/stub/",
-			"Application\\Tests\\Unit\\": "tests/unit/"
+			"App\\": "src/",
+			"App\\Tests\\Helpers\\": "tests/helpers/",
+			"App\\Tests\\Stub\\": "tests/stub/",
+			"App\\Tests\\Unit\\": "tests/unit/"
 		}
 	},
 	"require": {

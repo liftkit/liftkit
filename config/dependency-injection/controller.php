@@ -1,7 +1,7 @@
 <?php
 
 
-	use Application\Controller\Index as IndexController;
+	use App\Controller\Index as IndexController;
 	use LiftKit\DependencyInjection\Container\Container;
 
 
@@ -11,7 +11,7 @@
 
 
 	$container->setRule(
-		'Application.Controller.Index',
+		'App.Controller.Index',
 		function (Container $container)
 		{
 			return new IndexController($container);

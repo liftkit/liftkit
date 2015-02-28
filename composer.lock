@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "84ee6154b140f88377fd94e08b5dcb37",
+    "hash": "957ff22fc347f4b1fa7891c475b964b8",
     "packages": [
         {
             "name": "liftkit/collection",
