@@ -3,7 +3,6 @@
 
 	namespace App\Tests\Unit\Module;
 
-	use App\Module\App;
 	use App\Tests\Helpers\TestCase;
 
 
@@ -13,13 +12,13 @@
 
 		public function testInitializeModule ()
 		{
-			$this->getModule();
+			$this->initializeModule();
 		}
 		
 		
 		public function testExecute ()
 		{
-			$module = $this->getModule();
+			$module = $this->initializeModule();
 			$response = $module->execute('/');
 			
 			$this->assertContains(
@@ -36,7 +35,7 @@
 		
 		public function test403 ()
 		{
-			$module = $this->getModule();
+			$module = $this->initializeModule();
 			$response = $module->execute('/trigger-403');
 			
 			$this->assertContains(
@@ -53,7 +52,7 @@
 		
 		public function test404 ()
 		{
-			$module = $this->getModule();
+			$module = $this->initializeModule();
 			$response = $module->execute('/trigger-404');
 			
 			$this->assertContains(
@@ -70,7 +69,7 @@
 		
 		public function test500 ()
 		{
-			$module = $this->getModule();
+			$module = $this->initializeModule();
 			$response = $module->execute('/trigger-500');
 			
 			$this->assertContains(
@@ -82,11 +81,5 @@
 				'<title>500: Internal Server Error</title>',
 				(string) $response
 			);
-		}
-
-
-		protected function getModule ()
-		{
-			return new App($this->container);
 		}
 	}

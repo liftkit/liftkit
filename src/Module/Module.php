@@ -67,7 +67,7 @@
 		}
 
 
-		protected function initialize ()
+		public function initialize ()
 		{
 			$this->initializeDefault();
 			$this->initializeEnvironment();

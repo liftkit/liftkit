@@ -11,4 +11,8 @@
 		->manyToOne('parents');
 
 	$schema->defineTable('parents')
-		->oneToMany('children');
+		->oneToMany('children')
+		->manyToMany('friends', 'parent_friends');
+
+	$schema->defineTable('friends')
+		->manyToMany('parents', 'parent_friends');
