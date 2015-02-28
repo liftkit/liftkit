@@ -21,7 +21,7 @@
 	"require": {
 		"liftkit/input": "1.*",
 		"liftkit/dependency-injection": "1.*",
-		"liftkit/database": "1.*",
+		"liftkit/database": "2.*",
 		"liftkit/core": "dev-master",
 		"liftkit/form": "1.*",
 		"liftkit/output": "1.*",

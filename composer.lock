@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "957ff22fc347f4b1fa7891c475b964b8",
+    "hash": "b07396b754e0a5600a965c1489567e83",
     "packages": [
         {
             "name": "liftkit/collection",
@@ -92,16 +92,16 @@
         },
         {
             "name": "liftkit/database",
-            "version": "v1.0.1",
+            "version": "v2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liftkit/database.git",
-                "reference": "ccfa59fbf29d6dd3ceec08a4e169808ec9a6868f"
+                "reference": "151aecc4f9505684ce4fe5cc1bff62b42d588b64"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liftkit/database/zipball/ccfa59fbf29d6dd3ceec08a4e169808ec9a6868f",
-                "reference": "ccfa59fbf29d6dd3ceec08a4e169808ec9a6868f",
+                "url": "https://api.github.com/repos/liftkit/database/zipball/151aecc4f9505684ce4fe5cc1bff62b42d588b64",
+                "reference": "151aecc4f9505684ce4fe5cc1bff62b42d588b64",
                 "shasum": ""
             },
             "require": {
@@ -134,7 +134,7 @@
                 }
             ],
             "description": "Database library for LiftKit",
-            "time": "2015-02-26 18:45:29"
+            "time": "2015-02-28 13:34:43"
         },
         {
             "name": "liftkit/dependency-injection",

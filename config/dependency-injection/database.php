@@ -3,10 +3,9 @@
 	use LiftKit\DependencyInjection\Container\Container;
 	use LiftKit\Config\Config;
 
-	use LiftKit\Database\Connection\MySQL;
+	use LiftKit\Database\Connection\MySql;
 	use LiftKit\Database\Cache\Cache;
 	use LiftKit\Database\Schema\Schema;
-
 
 	/**
 	 * @var Container $container
@@ -38,13 +37,14 @@
 		{
 			$config = $container->getObject('App.Database.Config');
 
-			return new MySQL(
+			return new MySql(
 				$container,
 				$container->getObject('App.Database.Cache'),
-				$config['host'],
-				$config['user'],
-				$config['password'],
-				$config['schema']
+				new PDO(
+					'mysql:host=' . $config['host'] . ';dbname=' . $config['schema'],
+					$config['user'],
+					$config['password']
+				)
 			);
 		}
 	);
