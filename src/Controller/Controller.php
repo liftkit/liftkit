@@ -9,7 +9,7 @@
 	use LiftKit\Application\Application;
 
 	use LiftKit\Loader\File\View as ViewLoader;
-	use LiftKit\Document\Document;
+	use LiftKit\Document\Html as Document;
 	
 
 	abstract class Controller extends LiftKitController

@@ -1,7 +1,6 @@
 <?php
 
 	use LiftKit\DependencyInjection\Container\Container;
-	use LiftKit\Config\Config;
 
 	use LiftKit\Database\Connection\MySql;
 	use LiftKit\Database\Cache\Cache;
