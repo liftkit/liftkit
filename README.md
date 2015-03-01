@@ -13,5 +13,5 @@ which is included as a dependency of this package for demonstration's sake.
 We have other libraries that are not included or demonstrated in this package, but may also be useful. 
 Alternatively, LiftKit has been designed to play well with other packages.
 
-Anyone interested in this LiftKit should feel free contact me at rwilliams@stream9.net. I'd be glad to hear
+Anyone interested in LiftKit should feel free contact me at rwilliams@stream9.net. I'd be glad to hear
 your thoughts or field your questions.
