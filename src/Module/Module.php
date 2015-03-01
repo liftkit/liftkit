@@ -4,7 +4,7 @@
 	namespace App\Module;
 
 	use LiftKit\Module\Module as LiftKitModule;
-	
+
 	use LiftKit\Application\Application;
 	use LiftKit\Loader\File\Script as ScriptLoader;
 	use LiftKit\Loader\File\Config as ConfigLoader;
@@ -29,8 +29,8 @@
 		 * @var ConfigLoader
 		 */
 		protected $configLoader;
-		
-		
+
+
 		/**
 		 * @var ScriptLoader
 		 */
@@ -82,7 +82,7 @@
 			$this->initializeHooks();
 			$this->initializeControllers();
 			$this->initializeRouter();
-			
+
 			$this->loadModules();
 			$this->modulesLoaded();
 		}
@@ -100,7 +100,7 @@
 
 		public function initializeEnvironment ()
 		{
-			$this->config['environment'] = $this->scriptLoader->load('environment/environment', ['container' => $this->container]);
+			$this->config['environment'] = $this->scriptLoader->load('environment/environment');
 			$this->scriptLoader->load('errors/' . $this->config['environment']);
 			$this->container->setParameter('App.Environment', $this->config['environment']);
 		}
@@ -115,14 +115,14 @@
 
 			$this->loadSchemaConfig('database/schema/default');
 		}
-		
-		
+
+
 		protected function initializeUtilities ()
 		{
 			$this->loadDependencyInjectionConfig('dependency-injection/utility');
 		}
-		
-		
+
+
 		protected function initializeHooks ()
 		{
 			$this->loadHooksConfig('hooks/default');
@@ -141,13 +141,13 @@
 
 			$this->loadRouteConfig('routes/default');
 		}
-		
-		
+
+
 		protected function loadModules ()
-		{	
+		{
 		}
-		
-		
+
+
 		protected function modulesLoaded ()
 		{
 			foreach ($this->getSubModules() as $subModule) {
@@ -196,8 +196,8 @@
 				]
 			);
 		}
-		
-		
+
+
 		protected function loadModule ($moduleFile)
 		{
 			return $this->moduleLoader->load(
