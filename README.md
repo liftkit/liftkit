@@ -3,7 +3,7 @@ Under construction. Will be promoted to version 1.0 when stable.
 LiftKit has been developed as a framework for a proprietary CMS. It is currently lacking in documentation;
 but its primary goals are flexability, testability, modularity, performance, and simplicity.
 
-LiftKit denies the Convention-Over-Configuraion paradigm, in favor of some of the virtues outlined above.
+LiftKit denies the Convention-Over-Configuration paradigm, in favor of some of the virtues outlined above.
 
 This package serves as an outline of one potential configration for a project utilizing LiftKit. It is by
 no means the only way to organize a project that utilizes the LiftKit libraries, but it does provide a 
