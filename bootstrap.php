@@ -32,5 +32,5 @@
 		$container->getObject('App.Application')->triggerHook('404')->render();
 
 	} catch (Exception $e) {
-		$container->getObject('App.Application')->triggerHook('500');
+		$container->getObject('App.Application')->triggerHook('500')->render();
 	}
