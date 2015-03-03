@@ -5,8 +5,8 @@
 
 	use LiftKit\DependencyInjection\Container\Container;
 	use App\Module\App;
-	use LiftKit\Request\Request;
-	use LiftKit\Input\Input;
+
+	use LiftKit\Router\Exception\NoMatchingRoute as RouteException;
 
 
 	// Initialize Container
@@ -25,4 +25,12 @@
 
 	// Route Request
 
-	$app->execute($container->getObject('App.Request'))->render();
+	try {
+		$app->execute($container->getObject('App.Request'))->render();
+
+	} catch (RouteException $e) {
+		$container->getObject('App.Application')->triggerHook('404')->render();
+
+	} catch (Exception $e) {
+		$container->getObject('App.Application')->triggerHook('500');
+	}
