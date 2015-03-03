@@ -22,12 +22,12 @@
 		"liftkit/input": "1.*",
 		"liftkit/dependency-injection": "1.*",
 		"liftkit/database": "2.*",
-		"liftkit/core": "dev-master",
+		"liftkit/core": "0.2.*",
 		"liftkit/form": "1.*",
 		"liftkit/output": "1.*",
 		"liftkit/document": "1.*",
-		"liftkit/example-module": "dev-master",
-		"martinlindhe/http_response_code_compat": "1.0.0"
+		"liftkit/example-module": "0.1.*",
+		"martinlindhe/http_response_code_compat": "1.0.*"
 	},
 	"require-dev": {
 		"phpunit/phpunit": "4.5.*"

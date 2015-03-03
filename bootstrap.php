@@ -5,6 +5,8 @@
 
 	use LiftKit\DependencyInjection\Container\Container;
 	use App\Module\App;
+	use LiftKit\Request\Request;
+	use LiftKit\Input\Input;
 
 
 	// Initialize Container
@@ -17,6 +19,10 @@
 	// Initialize Module
 
 	$app = new App($container);
-	
+
 	$app->initialize();
-	$app->execute($_SERVER['REQUEST_URI'])->render();
+
+
+	// Route Request
+
+	$app->execute($container->getObject('App.Request'))->render();

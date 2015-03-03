@@ -7,6 +7,8 @@
 	use LiftKit\Application\Application as Application;
 	use LiftKit\Config\Config;
 	use LiftKit\Router\Http as HttpRouter;
+	use LiftKit\Request\Http as Request;
+	use LiftKit\Input\Input;
 
 
 	$container->setSingletonRule(
@@ -68,5 +70,19 @@
 		function ()
 		{
 			return new HttpRouter;
+		}
+	);
+
+
+	$container->setSingletonRule(
+		'App.Request',
+		function ()
+		{
+			return new Request(
+				$_SERVER,
+				new Input($_GET),
+				new Input($_POST),
+				new Input($_COOKIE)
+			);
 		}
 	);

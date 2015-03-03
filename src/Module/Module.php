@@ -15,6 +15,7 @@
 	use LiftKit\Database\Schema\Schema as DatabaseSchema;
 
 	use LiftKit\Router\Router;
+	use LiftKit\Request\Request;
 
 
 	abstract class Module extends LiftKitModule
@@ -67,9 +68,9 @@
 		protected $router;
 
 
-		public function execute ($uri)
+		public function execute (Request $request)
 		{
-			return $this->router->execute($uri);
+			return $this->router->execute($request);
 		}
 
 

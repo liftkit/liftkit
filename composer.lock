@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "698552e1b23d7bdbe0f3769bf53abe45",
+    "hash": "a9661b7fd824c7cedb2421a2fd3848fa",
     "packages": [
         {
             "name": "liftkit/collection",
@@ -46,16 +46,16 @@
         },
         {
             "name": "liftkit/core",
-            "version": "dev-master",
+            "version": "v0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liftkit/core.git",
-                "reference": "5966c6b4d9f6989c9812ea4f77a4a75a75493ca6"
+                "reference": "0a204dbc5bb43e9537e26ee7a00eab98200c19bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liftkit/core/zipball/5966c6b4d9f6989c9812ea4f77a4a75a75493ca6",
-                "reference": "5966c6b4d9f6989c9812ea4f77a4a75a75493ca6",
+                "url": "https://api.github.com/repos/liftkit/core/zipball/0a204dbc5bb43e9537e26ee7a00eab98200c19bd",
+                "reference": "0a204dbc5bb43e9537e26ee7a00eab98200c19bd",
                 "shasum": ""
             },
             "require": {
@@ -71,6 +71,7 @@
             "autoload": {
                 "psr-4": {
                     "LiftKit\\": "src/",
+                    "LiftKit\\Tests\\Helpers\\": "tests/helpers/",
                     "LiftKit\\Tests\\Stub\\": "tests/stub/",
                     "LiftKit\\Tests\\Unit\\": "tests/unit/"
                 }
@@ -88,7 +89,7 @@
                 }
             ],
             "description": "LiftKit Core Libraries",
-            "time": "2015-02-28 20:39:27"
+            "time": "2015-03-03 19:51:50"
         },
         {
             "name": "liftkit/database",
@@ -220,20 +221,20 @@
         },
         {
             "name": "liftkit/example-module",
-            "version": "dev-master",
+            "version": "v0.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liftkit/example-module.git",
-                "reference": "7df99ec512b6110b29fe536f5fe1e2ad62fc00f5"
+                "reference": "bf1be75acd87d12249edfcf2734160a83f144112"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liftkit/example-module/zipball/7df99ec512b6110b29fe536f5fe1e2ad62fc00f5",
-                "reference": "7df99ec512b6110b29fe536f5fe1e2ad62fc00f5",
+                "url": "https://api.github.com/repos/liftkit/example-module/zipball/bf1be75acd87d12249edfcf2734160a83f144112",
+                "reference": "bf1be75acd87d12249edfcf2734160a83f144112",
                 "shasum": ""
             },
             "require": {
-                "liftkit/core": "dev-master",
+                "liftkit/core": "0.2.*",
                 "liftkit/document": "1.*"
             },
             "require-dev": {
@@ -261,24 +262,24 @@
                 }
             ],
             "description": "LiftKit example module",
-            "time": "2015-02-28 20:42:27"
+            "time": "2015-03-03 20:00:13"
         },
         {
             "name": "liftkit/form",
-            "version": "v1.0.1",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liftkit/form.git",
-                "reference": "a1d54ad61309ed7162b4e3e1a26cf3251e49048f"
+                "reference": "ff18ed0923f346b23fae33008c18cb3ab110503a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liftkit/form/zipball/a1d54ad61309ed7162b4e3e1a26cf3251e49048f",
-                "reference": "a1d54ad61309ed7162b4e3e1a26cf3251e49048f",
+                "url": "https://api.github.com/repos/liftkit/form/zipball/ff18ed0923f346b23fae33008c18cb3ab110503a",
+                "reference": "ff18ed0923f346b23fae33008c18cb3ab110503a",
                 "shasum": ""
             },
             "require": {
-                "liftkit/core": "dev-master",
+                "liftkit/core": ">=0.2 <1.0",
                 "liftkit/dependency-injection": "1.*",
                 "liftkit/input": "1.*"
             },
@@ -306,7 +307,7 @@
                 }
             ],
             "description": "LiftKit form builder library",
-            "time": "2015-02-26 18:48:21"
+            "time": "2015-03-03 20:07:18"
         },
         {
             "name": "liftkit/input",
@@ -1417,10 +1418,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "liftkit/core": 20,
-        "liftkit/example-module": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
