@@ -29,10 +29,10 @@
 			http_response_code(403);
 
 			return $module->execute(new Request(
-				array(
+				[
 					'REQUEST_METHOD' => 'GET',
 					'REQUEST_URI'    => '/error-403',
-				)
+				]
 			));
 		}
 	);
@@ -45,10 +45,10 @@
 			http_response_code(404);
 
 			return $module->execute(new Request(
-				array(
+				[
 					'REQUEST_METHOD' => 'GET',
 					'REQUEST_URI'    => '/error-404',
-				)
+				]
 			));
 		}
 	);
@@ -61,10 +61,10 @@
 			http_response_code(500);
 
 			return $module->execute(new Request(
-				array(
+				[
 					'REQUEST_METHOD' => 'GET',
 					'REQUEST_URI'    => '/error-500',
-				)
+				]
 			));
 		}
 	);
