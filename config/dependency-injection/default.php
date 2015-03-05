@@ -1,5 +1,9 @@
 <?php
 
+	use App\Module\App;
+
+	use LiftKit\DependencyInjection\Container\Container;
+
 	use LiftKit\Loader\File\Script as ScriptLoader;
 	use LiftKit\Loader\File\Config as ConfigLoader;
 	use LiftKit\Loader\File\View as ViewLoader;
@@ -52,6 +56,15 @@
 		function ()
 		{
 			return new Config;
+		}
+	);
+
+
+	$container->setSingletonRule(
+		'App.Module',
+		function (Container $container)
+		{
+			return new App($container);
 		}
 	);
 

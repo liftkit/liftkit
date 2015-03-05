@@ -15,10 +15,10 @@
 	 * respectively.
 	 *
 	 * You can create your own environment-dependent configurations by extending
-	 * \Application\Module\Module in \Application\Module\Application.
+	 * \App\Module\Module in \App\Module\Application.
 	 */
 
-	
+
 	$hostName = php_uname('n');
 
 	if (strstr($hostName, '.local')) {
