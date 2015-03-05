@@ -4,8 +4,6 @@
 	require_once(__DIR__ . '/vendor/autoload.php');
 
 	use LiftKit\DependencyInjection\Container\Container;
-	use App\Module\App;
-
 	use LiftKit\Router\Exception\NoMatchingRoute as RouteException;
 
 
@@ -18,19 +16,21 @@
 
 	// Initialize Module
 
-	$app = $container->getObject('App.Module');
+	$appModule = $container->getObject('App.Module');
+	$appModule->initialize();
 
-	$app->initialize();
+	$application = $container->getObject('App.Application');
+	$request     = $container->getObject('App.Request');
 
 
 	// Route Request
 
 	try {
-		$app->execute($container->getObject('App.Request'))->render();
+		$appModule->execute($request)->render();
 
 	} catch (RouteException $e) {
-		$container->getObject('App.Application')->triggerHook('404')->render();
+		$application->triggerHook('404')->render();
 
 	} catch (Exception $e) {
-		$container->getObject('App.Application')->triggerHook('500')->render();
+		$application->triggerHook('500')->render();
 	}
