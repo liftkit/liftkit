@@ -18,7 +18,7 @@
 
 	// Initialize Module
 
-	$app = new App($container);
+	$app = $container->getObject('App.Module');
 
 	$app->initialize();
 
