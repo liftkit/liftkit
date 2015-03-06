@@ -11,9 +11,12 @@
 	 */
 
 
-	$router->registerController(
+	$router->registerControllerFactory(
 		'/',
-		$container->getObject('App.Controller.Index'),
+		function () use ($container)
+		{
+			return $container->getObject('App.Controller.Index');
+		},
 		'App.Index'
 	);
 

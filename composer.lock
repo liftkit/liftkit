@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a9661b7fd824c7cedb2421a2fd3848fa",
+    "hash": "cf00b9c224b1efd83be32c76859d86e3",
     "packages": [
         {
             "name": "liftkit/collection",
@@ -388,6 +388,47 @@
             ],
             "description": "LiftKit library for sanitizing output",
             "time": "2015-02-27 22:18:18"
+        },
+        {
+            "name": "liftkit/session",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liftkit/session.git",
+                "reference": "309791adafe9c26402f5c742a5c03fc096ae0eed"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/liftkit/session/zipball/309791adafe9c26402f5c742a5c03fc096ae0eed",
+                "reference": "309791adafe9c26402f5c742a5c03fc096ae0eed",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.5.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "LiftKit\\": "src/",
+                    "LiftKit\\Tests\\Helpers\\": "tests/helpers/",
+                    "LiftKit\\Tests\\Stub\\": "tests/stub/",
+                    "LiftKit\\Tests\\Unit\\": "tests/unit/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGP-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Ryan Williams",
+                    "email": "rwilliams@stream9.net",
+                    "homepage": "https://www.stream9.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "LiftKit session library",
+            "time": "2015-03-05 20:35:27"
         },
         {
             "name": "liftkit/token",

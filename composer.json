@@ -26,6 +26,7 @@
 		"liftkit/form": "1.*",
 		"liftkit/output": "1.*",
 		"liftkit/document": "1.*",
+		"liftkit/session": "1.*",
 		"liftkit/example-module": "0.1.*",
 		"martinlindhe/http_response_code_compat": "1.0.*"
 	},

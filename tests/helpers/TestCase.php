@@ -23,6 +23,7 @@
 			$this->container = $container = new Container;
 
 			require(dirname(dirname(__DIR__)) . '/config/dependency-injection/default.php');
+			require(dirname(__DIR__) . '/config/dependency-injection/default.php');
 		}
 
 
@@ -32,6 +33,15 @@
 
 			$app->initialize();
 
+			$scriptLoader = $this->container->getObject('App.TestScriptLoader');
+
+			$scriptLoader->load(
+				'dependency-injection/utility',
+				[
+					'container' => $this->container,
+				]
+			);
+
 			return $app;
 		}
 
@@ -39,10 +49,10 @@
 		protected function createRequest ($method, $uri)
 		{
 			return new HttpRequest(
-				array(
+				[
 					'REQUEST_METHOD' => $method,
 					'REQUEST_URI'    => $uri,
-				)
+				]
 			);
 		}
 
