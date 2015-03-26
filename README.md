@@ -1,5 +1,3 @@
-Under construction. Will be promoted to version 1.0 when stable.
-
 LiftKit has been developed as a framework for a proprietary CMS. It is currently lacking in documentation;
 but its primary goals are flexability, testability, modularity, performance, and simplicity.
 
