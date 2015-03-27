@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "cf00b9c224b1efd83be32c76859d86e3",
+    "hash": "4df34c20f2bf1521ec4539761686f8e4",
     "packages": [
         {
             "name": "liftkit/collection",
@@ -46,16 +46,16 @@
         },
         {
             "name": "liftkit/core",
-            "version": "v0.2.0",
+            "version": "v0.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liftkit/core.git",
-                "reference": "0a204dbc5bb43e9537e26ee7a00eab98200c19bd"
+                "reference": "2a11cbd0195029ddb592ba0b1f674c0ef7edfcec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liftkit/core/zipball/0a204dbc5bb43e9537e26ee7a00eab98200c19bd",
-                "reference": "0a204dbc5bb43e9537e26ee7a00eab98200c19bd",
+                "url": "https://api.github.com/repos/liftkit/core/zipball/2a11cbd0195029ddb592ba0b1f674c0ef7edfcec",
+                "reference": "2a11cbd0195029ddb592ba0b1f674c0ef7edfcec",
                 "shasum": ""
             },
             "require": {
@@ -89,20 +89,20 @@
                 }
             ],
             "description": "LiftKit Core Libraries",
-            "time": "2015-03-03 19:51:50"
+            "time": "2015-03-23 20:52:44"
         },
         {
             "name": "liftkit/database",
-            "version": "v2.0.0",
+            "version": "v2.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liftkit/database.git",
-                "reference": "151aecc4f9505684ce4fe5cc1bff62b42d588b64"
+                "reference": "28aa4bb12309be0ff814b22385be637c3e01a10a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liftkit/database/zipball/151aecc4f9505684ce4fe5cc1bff62b42d588b64",
-                "reference": "151aecc4f9505684ce4fe5cc1bff62b42d588b64",
+                "url": "https://api.github.com/repos/liftkit/database/zipball/28aa4bb12309be0ff814b22385be637c3e01a10a",
+                "reference": "28aa4bb12309be0ff814b22385be637c3e01a10a",
                 "shasum": ""
             },
             "require": {
@@ -135,7 +135,7 @@
                 }
             ],
             "description": "Database library for LiftKit",
-            "time": "2015-02-28 13:34:43"
+            "time": "2015-03-20 15:48:21"
         },
         {
             "name": "liftkit/dependency-injection",
@@ -179,16 +179,16 @@
         },
         {
             "name": "liftkit/document",
-            "version": "v1.0.0",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liftkit/document.git",
-                "reference": "26c6d7222ffdbea34a825dd89ff3d5f3b53479e6"
+                "reference": "bf4512315c8e3bdcf06458199ae6539e80410b3c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liftkit/document/zipball/26c6d7222ffdbea34a825dd89ff3d5f3b53479e6",
-                "reference": "26c6d7222ffdbea34a825dd89ff3d5f3b53479e6",
+                "url": "https://api.github.com/repos/liftkit/document/zipball/bf4512315c8e3bdcf06458199ae6539e80410b3c",
+                "reference": "bf4512315c8e3bdcf06458199ae6539e80410b3c",
                 "shasum": ""
             },
             "require": {
@@ -217,7 +217,7 @@
                 }
             ],
             "description": "LiftKit adding elements to HTML documents",
-            "time": "2015-02-27 23:09:14"
+            "time": "2015-03-25 20:09:14"
         },
         {
             "name": "liftkit/example-module",
@@ -266,16 +266,16 @@
         },
         {
             "name": "liftkit/form",
-            "version": "v1.0.2",
+            "version": "v2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liftkit/form.git",
-                "reference": "ff18ed0923f346b23fae33008c18cb3ab110503a"
+                "reference": "35195aa56f8671830ca953e04aac1e784ee22e1f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liftkit/form/zipball/ff18ed0923f346b23fae33008c18cb3ab110503a",
-                "reference": "ff18ed0923f346b23fae33008c18cb3ab110503a",
+                "url": "https://api.github.com/repos/liftkit/form/zipball/35195aa56f8671830ca953e04aac1e784ee22e1f",
+                "reference": "35195aa56f8671830ca953e04aac1e784ee22e1f",
                 "shasum": ""
             },
             "require": {
@@ -307,7 +307,7 @@
                 }
             ],
             "description": "LiftKit form builder library",
-            "time": "2015-03-03 20:07:18"
+            "time": "2015-03-27 17:50:30"
         },
         {
             "name": "liftkit/input",
@@ -391,16 +391,16 @@
         },
         {
             "name": "liftkit/session",
-            "version": "v1.0.1",
+            "version": "v1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liftkit/session.git",
-                "reference": "309791adafe9c26402f5c742a5c03fc096ae0eed"
+                "reference": "34548707f723739fe6835f17f2a8ee4eede514af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liftkit/session/zipball/309791adafe9c26402f5c742a5c03fc096ae0eed",
-                "reference": "309791adafe9c26402f5c742a5c03fc096ae0eed",
+                "url": "https://api.github.com/repos/liftkit/session/zipball/34548707f723739fe6835f17f2a8ee4eede514af",
+                "reference": "34548707f723739fe6835f17f2a8ee4eede514af",
                 "shasum": ""
             },
             "require-dev": {
@@ -428,7 +428,7 @@
                 }
             ],
             "description": "LiftKit session library",
-            "time": "2015-03-05 20:35:27"
+            "time": "2015-03-24 16:42:58"
         },
         {
             "name": "liftkit/token",
@@ -1411,21 +1411,24 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v2.6.4",
+            "version": "v2.6.5",
             "target-dir": "Symfony/Component/Yaml",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml.git",
-                "reference": "60ed7751671113cf1ee7d7778e691642c2e9acd8"
+                "reference": "0cd8e72071e46e15fc072270ae39ea1b66b10a9d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/60ed7751671113cf1ee7d7778e691642c2e9acd8",
-                "reference": "60ed7751671113cf1ee7d7778e691642c2e9acd8",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/0cd8e72071e46e15fc072270ae39ea1b66b10a9d",
+                "reference": "0cd8e72071e46e15fc072270ae39ea1b66b10a9d",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "symfony/phpunit-bridge": "~2.7"
             },
             "type": "library",
             "extra": {
@@ -1454,7 +1457,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "http://symfony.com",
-            "time": "2015-01-25 04:39:26"
+            "time": "2015-03-12 10:28:44"
         }
     ],
     "aliases": [],

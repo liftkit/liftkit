@@ -23,7 +23,7 @@
 		"liftkit/dependency-injection": "1.*",
 		"liftkit/database": "2.*",
 		"liftkit/core": "0.2.*",
-		"liftkit/form": "1.*",
+		"liftkit/form": "2.*",
 		"liftkit/output": "1.*",
 		"liftkit/document": "1.*",
 		"liftkit/session": "1.*",
