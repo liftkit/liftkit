@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4df34c20f2bf1521ec4539761686f8e4",
+    "hash": "4fbab1363ec38431db303ac204b8e2ee",
     "packages": [
         {
             "name": "liftkit/collection",
@@ -266,16 +266,16 @@
         },
         {
             "name": "liftkit/form",
-            "version": "v2.0.0",
+            "version": "v3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liftkit/form.git",
-                "reference": "35195aa56f8671830ca953e04aac1e784ee22e1f"
+                "reference": "b699b0a5333c12d5a9ebcec9be18321bd26bbad4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liftkit/form/zipball/35195aa56f8671830ca953e04aac1e784ee22e1f",
-                "reference": "35195aa56f8671830ca953e04aac1e784ee22e1f",
+                "url": "https://api.github.com/repos/liftkit/form/zipball/b699b0a5333c12d5a9ebcec9be18321bd26bbad4",
+                "reference": "b699b0a5333c12d5a9ebcec9be18321bd26bbad4",
                 "shasum": ""
             },
             "require": {
@@ -307,7 +307,7 @@
                 }
             ],
             "description": "LiftKit form builder library",
-            "time": "2015-03-27 17:50:30"
+            "time": "2015-03-27 19:53:34"
         },
         {
             "name": "liftkit/input",
