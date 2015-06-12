@@ -19,16 +19,16 @@
 		}
 	},
 	"require": {
-		"liftkit/input": "1.*",
-		"liftkit/dependency-injection": "1.*",
-		"liftkit/database": "2.*",
-		"liftkit/core": "0.2.*",
-		"liftkit/form": "3.*",
-		"liftkit/output": "1.*",
-		"liftkit/document": "1.*",
-		"liftkit/session": "1.*",
-		"liftkit/example-module": "0.1.*",
-		"martinlindhe/http_response_code_compat": "1.0.*"
+		"liftkit/input": "~1.1",
+		"liftkit/dependency-injection": "~1.1",
+		"liftkit/database": "~2.8",
+		"liftkit/core": "0.3.*",
+		"liftkit/form": "~3.0",
+		"liftkit/output": "~1.1",
+		"liftkit/document": "~1.1",
+		"liftkit/session": "~1.0",
+		"liftkit/example-module": "0.2.*",
+		"martinlindhe/http_response_code_compat": "~1.0"
 	},
 	"require-dev": {
 		"phpunit/phpunit": "4.5.*"

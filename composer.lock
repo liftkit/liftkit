@@ -1,23 +1,23 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4fbab1363ec38431db303ac204b8e2ee",
+    "hash": "e502fe60d4f2ed6cc484f8fdf1b0c296",
     "packages": [
         {
             "name": "liftkit/collection",
-            "version": "v1.0",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liftkit/collection.git",
-                "reference": "41d2c3bb8855e0b779c1930875d5f5adde99db57"
+                "reference": "984256b11a1f8b3db4d68b09858d9465890fabc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liftkit/collection/zipball/41d2c3bb8855e0b779c1930875d5f5adde99db57",
-                "reference": "41d2c3bb8855e0b779c1930875d5f5adde99db57",
+                "url": "https://api.github.com/repos/liftkit/collection/zipball/984256b11a1f8b3db4d68b09858d9465890fabc1",
+                "reference": "984256b11a1f8b3db4d68b09858d9465890fabc1",
                 "shasum": ""
             },
             "require-dev": {
@@ -26,7 +26,8 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "LiftKit\\": "src/"
+                    "LiftKit\\": "src/",
+                    "LiftKit\\Tests\\Unit\\": "tests/unit/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -42,20 +43,20 @@
                 }
             ],
             "description": "LiftKit base class for collections",
-            "time": "2015-02-17 15:08:34"
+            "time": "2015-05-07 20:36:14"
         },
         {
             "name": "liftkit/core",
-            "version": "v0.2.4",
+            "version": "v0.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liftkit/core.git",
-                "reference": "2a11cbd0195029ddb592ba0b1f674c0ef7edfcec"
+                "reference": "2cea31e51773c1ea1d37ab2e9c667c798669b26b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liftkit/core/zipball/2a11cbd0195029ddb592ba0b1f674c0ef7edfcec",
-                "reference": "2a11cbd0195029ddb592ba0b1f674c0ef7edfcec",
+                "url": "https://api.github.com/repos/liftkit/core/zipball/2cea31e51773c1ea1d37ab2e9c667c798669b26b",
+                "reference": "2cea31e51773c1ea1d37ab2e9c667c798669b26b",
                 "shasum": ""
             },
             "require": {
@@ -89,20 +90,20 @@
                 }
             ],
             "description": "LiftKit Core Libraries",
-            "time": "2015-03-23 20:52:44"
+            "time": "2015-06-01 19:04:20"
         },
         {
             "name": "liftkit/database",
-            "version": "v2.3.1",
+            "version": "v2.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liftkit/database.git",
-                "reference": "28aa4bb12309be0ff814b22385be637c3e01a10a"
+                "reference": "7bb2324f730e8dc0a2c5c8b11885b6837750cd00"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liftkit/database/zipball/28aa4bb12309be0ff814b22385be637c3e01a10a",
-                "reference": "28aa4bb12309be0ff814b22385be637c3e01a10a",
+                "url": "https://api.github.com/repos/liftkit/database/zipball/7bb2324f730e8dc0a2c5c8b11885b6837750cd00",
+                "reference": "7bb2324f730e8dc0a2c5c8b11885b6837750cd00",
                 "shasum": ""
             },
             "require": {
@@ -135,20 +136,20 @@
                 }
             ],
             "description": "Database library for LiftKit",
-            "time": "2015-03-20 15:48:21"
+            "time": "2015-05-22 19:12:37"
         },
         {
             "name": "liftkit/dependency-injection",
-            "version": "v1.1",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liftkit/dependency-injection.git",
-                "reference": "f9e9752a99f2f59653c6fd39f6e657e2e3a23d72"
+                "reference": "a66a3018c6254c78527d5231eab26b914ae82bf5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liftkit/dependency-injection/zipball/f9e9752a99f2f59653c6fd39f6e657e2e3a23d72",
-                "reference": "f9e9752a99f2f59653c6fd39f6e657e2e3a23d72",
+                "url": "https://api.github.com/repos/liftkit/dependency-injection/zipball/a66a3018c6254c78527d5231eab26b914ae82bf5",
+                "reference": "a66a3018c6254c78527d5231eab26b914ae82bf5",
                 "shasum": ""
             },
             "require-dev": {
@@ -175,20 +176,20 @@
                 }
             ],
             "description": "Dependency injection library for LiftKit",
-            "time": "2015-02-26 18:38:14"
+            "time": "2015-05-07 20:37:08"
         },
         {
             "name": "liftkit/document",
-            "version": "v1.1.0",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liftkit/document.git",
-                "reference": "bf4512315c8e3bdcf06458199ae6539e80410b3c"
+                "reference": "8855274b10fb299670536dc27fae8e09d30aa920"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liftkit/document/zipball/bf4512315c8e3bdcf06458199ae6539e80410b3c",
-                "reference": "bf4512315c8e3bdcf06458199ae6539e80410b3c",
+                "url": "https://api.github.com/repos/liftkit/document/zipball/8855274b10fb299670536dc27fae8e09d30aa920",
+                "reference": "8855274b10fb299670536dc27fae8e09d30aa920",
                 "shasum": ""
             },
             "require": {
@@ -217,25 +218,25 @@
                 }
             ],
             "description": "LiftKit adding elements to HTML documents",
-            "time": "2015-03-25 20:09:14"
+            "time": "2015-05-07 20:42:52"
         },
         {
             "name": "liftkit/example-module",
-            "version": "v0.1.2",
+            "version": "v0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liftkit/example-module.git",
-                "reference": "bf1be75acd87d12249edfcf2734160a83f144112"
+                "reference": "b2e233f64b79f2f4294214f2be1711cacbf78ebd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liftkit/example-module/zipball/bf1be75acd87d12249edfcf2734160a83f144112",
-                "reference": "bf1be75acd87d12249edfcf2734160a83f144112",
+                "url": "https://api.github.com/repos/liftkit/example-module/zipball/b2e233f64b79f2f4294214f2be1711cacbf78ebd",
+                "reference": "b2e233f64b79f2f4294214f2be1711cacbf78ebd",
                 "shasum": ""
             },
             "require": {
-                "liftkit/core": "0.2.*",
-                "liftkit/document": "1.*"
+                "liftkit/core": "~0.3",
+                "liftkit/document": "~1.1"
             },
             "require-dev": {
                 "phpunit/phpunit": "4.5.*"
@@ -262,20 +263,20 @@
                 }
             ],
             "description": "LiftKit example module",
-            "time": "2015-03-03 20:00:13"
+            "time": "2015-06-12 16:15:18"
         },
         {
             "name": "liftkit/form",
-            "version": "v3.0.0",
+            "version": "v3.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liftkit/form.git",
-                "reference": "b699b0a5333c12d5a9ebcec9be18321bd26bbad4"
+                "reference": "0ca5c0bdc4eb9e547808b08011d82116f347bd21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liftkit/form/zipball/b699b0a5333c12d5a9ebcec9be18321bd26bbad4",
-                "reference": "b699b0a5333c12d5a9ebcec9be18321bd26bbad4",
+                "url": "https://api.github.com/repos/liftkit/form/zipball/0ca5c0bdc4eb9e547808b08011d82116f347bd21",
+                "reference": "0ca5c0bdc4eb9e547808b08011d82116f347bd21",
                 "shasum": ""
             },
             "require": {
@@ -307,20 +308,20 @@
                 }
             ],
             "description": "LiftKit form builder library",
-            "time": "2015-03-27 19:53:34"
+            "time": "2015-05-07 20:47:26"
         },
         {
             "name": "liftkit/input",
-            "version": "v1.0.1",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liftkit/input.git",
-                "reference": "e3f7244b8418179f0c52835b6ae99d4f69e410b5"
+                "reference": "1966dff67e4b7f57ef2bea40f39baf7fb4b8614c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liftkit/input/zipball/e3f7244b8418179f0c52835b6ae99d4f69e410b5",
-                "reference": "e3f7244b8418179f0c52835b6ae99d4f69e410b5",
+                "url": "https://api.github.com/repos/liftkit/input/zipball/1966dff67e4b7f57ef2bea40f39baf7fb4b8614c",
+                "reference": "1966dff67e4b7f57ef2bea40f39baf7fb4b8614c",
                 "shasum": ""
             },
             "require": {
@@ -348,20 +349,20 @@
                 }
             ],
             "description": "LiftKit input wrappers",
-            "time": "2015-02-26 18:50:56"
+            "time": "2015-05-07 20:39:28"
         },
         {
             "name": "liftkit/output",
-            "version": "v1.0.0",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liftkit/output.git",
-                "reference": "f149ecbe14065824631722d92fdc627693f1a732"
+                "reference": "e6fd2f9662eaa962cd9af4fe85e3e3d107a570a5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liftkit/output/zipball/f149ecbe14065824631722d92fdc627693f1a732",
-                "reference": "f149ecbe14065824631722d92fdc627693f1a732",
+                "url": "https://api.github.com/repos/liftkit/output/zipball/e6fd2f9662eaa962cd9af4fe85e3e3d107a570a5",
+                "reference": "e6fd2f9662eaa962cd9af4fe85e3e3d107a570a5",
                 "shasum": ""
             },
             "require-dev": {
@@ -387,20 +388,20 @@
                 }
             ],
             "description": "LiftKit library for sanitizing output",
-            "time": "2015-02-27 22:18:18"
+            "time": "2015-05-07 20:48:31"
         },
         {
             "name": "liftkit/session",
-            "version": "v1.0.4",
+            "version": "v1.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liftkit/session.git",
-                "reference": "34548707f723739fe6835f17f2a8ee4eede514af"
+                "reference": "267cb29154291823730944427b06319ecae8f780"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liftkit/session/zipball/34548707f723739fe6835f17f2a8ee4eede514af",
-                "reference": "34548707f723739fe6835f17f2a8ee4eede514af",
+                "url": "https://api.github.com/repos/liftkit/session/zipball/267cb29154291823730944427b06319ecae8f780",
+                "reference": "267cb29154291823730944427b06319ecae8f780",
                 "shasum": ""
             },
             "require-dev": {
@@ -428,20 +429,20 @@
                 }
             ],
             "description": "LiftKit session library",
-            "time": "2015-03-24 16:42:58"
+            "time": "2015-05-07 20:40:41"
         },
         {
             "name": "liftkit/token",
-            "version": "v1.0.0",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liftkit/token.git",
-                "reference": "a575ef018b826106c29178422bb19a800658aaed"
+                "reference": "a55736219cc1b7ba19629a60561d42511ee49c9a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liftkit/token/zipball/a575ef018b826106c29178422bb19a800658aaed",
-                "reference": "a575ef018b826106c29178422bb19a800658aaed",
+                "url": "https://api.github.com/repos/liftkit/token/zipball/a55736219cc1b7ba19629a60561d42511ee49c9a",
+                "reference": "a55736219cc1b7ba19629a60561d42511ee49c9a",
                 "shasum": ""
             },
             "require-dev": {
@@ -451,7 +452,7 @@
             "autoload": {
                 "psr-4": {
                     "LiftKit\\": "src/",
-                    "LiftKit\\Tests\\": "tests/"
+                    "LiftKit\\Tests\\Unit\\": "tests/unit/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -467,7 +468,7 @@
                 }
             ],
             "description": "Library for working with string identifiers",
-            "time": "2015-02-22 15:11:11"
+            "time": "2015-05-07 20:46:15"
         },
         {
             "name": "martinlindhe/http_response_code_compat",
@@ -610,21 +611,22 @@
         },
         {
             "name": "phpspec/prophecy",
-            "version": "v1.3.1",
+            "version": "v1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpspec/prophecy.git",
-                "reference": "9ca52329bcdd1500de24427542577ebf3fc2f1c9"
+                "reference": "3132b1f44c7bf2ec4c7eb2d3cb78fdeca760d373"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/9ca52329bcdd1500de24427542577ebf3fc2f1c9",
-                "reference": "9ca52329bcdd1500de24427542577ebf3fc2f1c9",
+                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/3132b1f44c7bf2ec4c7eb2d3cb78fdeca760d373",
+                "reference": "3132b1f44c7bf2ec4c7eb2d3cb78fdeca760d373",
                 "shasum": ""
             },
             "require": {
-                "doctrine/instantiator": "~1.0,>=1.0.2",
-                "phpdocumentor/reflection-docblock": "~2.0"
+                "doctrine/instantiator": "^1.0.2",
+                "phpdocumentor/reflection-docblock": "~2.0",
+                "sebastian/comparator": "~1.1"
             },
             "require-dev": {
                 "phpspec/phpspec": "~2.0"
@@ -632,7 +634,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.2.x-dev"
+                    "dev-master": "1.4.x-dev"
                 }
             },
             "autoload": {
@@ -656,7 +658,7 @@
                 }
             ],
             "description": "Highly opinionated mocking framework for PHP 5.3+",
-            "homepage": "http://phpspec.org",
+            "homepage": "https://github.com/phpspec/prophecy",
             "keywords": [
                 "Double",
                 "Dummy",
@@ -665,20 +667,20 @@
                 "spy",
                 "stub"
             ],
-            "time": "2014-11-17 16:23:49"
+            "time": "2015-04-27 22:15:08"
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "2.0.15",
+            "version": "2.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "34cc484af1ca149188d0d9e91412191e398e0b67"
+                "reference": "be2286cb8c7e1773eded49d9719219e6f74f9e3e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/34cc484af1ca149188d0d9e91412191e398e0b67",
-                "reference": "34cc484af1ca149188d0d9e91412191e398e0b67",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/be2286cb8c7e1773eded49d9719219e6f74f9e3e",
+                "reference": "be2286cb8c7e1773eded49d9719219e6f74f9e3e",
                 "shasum": ""
             },
             "require": {
@@ -701,7 +703,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.0.x-dev"
+                    "dev-master": "2.1.x-dev"
                 }
             },
             "autoload": {
@@ -727,7 +729,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-01-24 10:06:35"
+            "time": "2015-06-09 13:05:42"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -864,16 +866,16 @@
         },
         {
             "name": "phpunit/php-token-stream",
-            "version": "1.4.0",
+            "version": "1.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-token-stream.git",
-                "reference": "db32c18eba00b121c145575fcbcd4d4d24e6db74"
+                "reference": "db63be1159c81df649cd0260e30249a586d4129e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/db32c18eba00b121c145575fcbcd4d4d24e6db74",
-                "reference": "db32c18eba00b121c145575fcbcd4d4d24e6db74",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/db63be1159c81df649cd0260e30249a586d4129e",
+                "reference": "db63be1159c81df649cd0260e30249a586d4129e",
                 "shasum": ""
             },
             "require": {
@@ -909,20 +911,20 @@
             "keywords": [
                 "tokenizer"
             ],
-            "time": "2015-01-17 09:51:32"
+            "time": "2015-06-12 07:34:24"
         },
         {
             "name": "phpunit/phpunit",
-            "version": "4.5.0",
+            "version": "4.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "5b578d3865a9128b9c209b011fda6539ec06e7a5"
+                "reference": "d6429b0995b24a2d9dfe5587ee3a7071c1161af4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/5b578d3865a9128b9c209b011fda6539ec06e7a5",
-                "reference": "5b578d3865a9128b9c209b011fda6539ec06e7a5",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/d6429b0995b24a2d9dfe5587ee3a7071c1161af4",
+                "reference": "d6429b0995b24a2d9dfe5587ee3a7071c1161af4",
                 "shasum": ""
             },
             "require": {
@@ -932,8 +934,8 @@
                 "ext-reflection": "*",
                 "ext-spl": "*",
                 "php": ">=5.3.3",
-                "phpspec/prophecy": "~1.3.1",
-                "phpunit/php-code-coverage": "~2.0",
+                "phpspec/prophecy": "~1.3,>=1.3.1",
+                "phpunit/php-code-coverage": "~2.0,>=2.0.11",
                 "phpunit/php-file-iterator": "~1.3.2",
                 "phpunit/php-text-template": "~1.2",
                 "phpunit/php-timer": "~1.0.2",
@@ -981,29 +983,29 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-02-05 15:51:19"
+            "time": "2015-03-29 09:24:05"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
-            "version": "2.3.0",
+            "version": "2.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit-mock-objects.git",
-                "reference": "c63d2367247365f688544f0d500af90a11a44c65"
+                "reference": "92408bb1968a81b3217a6fdf6c1a198da83caa35"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/c63d2367247365f688544f0d500af90a11a44c65",
-                "reference": "c63d2367247365f688544f0d500af90a11a44c65",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/92408bb1968a81b3217a6fdf6c1a198da83caa35",
+                "reference": "92408bb1968a81b3217a6fdf6c1a198da83caa35",
                 "shasum": ""
             },
             "require": {
-                "doctrine/instantiator": "~1.0,>=1.0.1",
+                "doctrine/instantiator": "~1.0,>=1.0.2",
                 "php": ">=5.3.3",
                 "phpunit/php-text-template": "~1.2"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.3"
+                "phpunit/phpunit": "~4.4"
             },
             "suggest": {
                 "ext-soap": "*"
@@ -1036,7 +1038,7 @@
                 "mock",
                 "xunit"
             ],
-            "time": "2014-10-03 05:12:11"
+            "time": "2015-06-11 15:55:48"
         },
         {
             "name": "sebastian/comparator",
@@ -1104,16 +1106,16 @@
         },
         {
             "name": "sebastian/diff",
-            "version": "1.2.0",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/diff.git",
-                "reference": "5843509fed39dee4b356a306401e9dd1a931fec7"
+                "reference": "863df9687835c62aa423a22412d26fa2ebde3fd3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/5843509fed39dee4b356a306401e9dd1a931fec7",
-                "reference": "5843509fed39dee4b356a306401e9dd1a931fec7",
+                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/863df9687835c62aa423a22412d26fa2ebde3fd3",
+                "reference": "863df9687835c62aa423a22412d26fa2ebde3fd3",
                 "shasum": ""
             },
             "require": {
@@ -1125,7 +1127,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.2-dev"
+                    "dev-master": "1.3-dev"
                 }
             },
             "autoload": {
@@ -1152,32 +1154,32 @@
             "keywords": [
                 "diff"
             ],
-            "time": "2014-08-15 10:29:00"
+            "time": "2015-02-22 15:13:53"
         },
         {
             "name": "sebastian/environment",
-            "version": "1.2.1",
+            "version": "1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/environment.git",
-                "reference": "6e6c71d918088c251b181ba8b3088af4ac336dd7"
+                "reference": "5a8c7d31914337b69923db26c4221b81ff5a196e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/environment/zipball/6e6c71d918088c251b181ba8b3088af4ac336dd7",
-                "reference": "6e6c71d918088c251b181ba8b3088af4ac336dd7",
+                "url": "https://api.github.com/repos/sebastianbergmann/environment/zipball/5a8c7d31914337b69923db26c4221b81ff5a196e",
+                "reference": "5a8c7d31914337b69923db26c4221b81ff5a196e",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.3"
+                "phpunit/phpunit": "~4.4"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.2.x-dev"
+                    "dev-master": "1.3.x-dev"
                 }
             },
             "autoload": {
@@ -1202,7 +1204,7 @@
                 "environment",
                 "hhvm"
             ],
-            "time": "2014-10-25 08:00:45"
+            "time": "2015-01-01 10:01:08"
         },
         {
             "name": "sebastian/exporter",
@@ -1376,16 +1378,16 @@
         },
         {
             "name": "sebastian/version",
-            "version": "1.0.4",
+            "version": "1.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/version.git",
-                "reference": "a77d9123f8e809db3fbdea15038c27a95da4058b"
+                "reference": "ab931d46cd0d3204a91e1b9a40c4bc13032b58e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/version/zipball/a77d9123f8e809db3fbdea15038c27a95da4058b",
-                "reference": "a77d9123f8e809db3fbdea15038c27a95da4058b",
+                "url": "https://api.github.com/repos/sebastianbergmann/version/zipball/ab931d46cd0d3204a91e1b9a40c4bc13032b58e4",
+                "reference": "ab931d46cd0d3204a91e1b9a40c4bc13032b58e4",
                 "shasum": ""
             },
             "type": "library",
@@ -1407,25 +1409,24 @@
             ],
             "description": "Library that helps with managing the version number of Git-hosted PHP projects",
             "homepage": "https://github.com/sebastianbergmann/version",
-            "time": "2014-12-15 14:25:24"
+            "time": "2015-02-24 06:35:25"
         },
         {
             "name": "symfony/yaml",
-            "version": "v2.6.5",
-            "target-dir": "Symfony/Component/Yaml",
+            "version": "v2.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml.git",
-                "reference": "0cd8e72071e46e15fc072270ae39ea1b66b10a9d"
+                "reference": "9808e75c609a14f6db02f70fccf4ca4aab53c160"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/0cd8e72071e46e15fc072270ae39ea1b66b10a9d",
-                "reference": "0cd8e72071e46e15fc072270ae39ea1b66b10a9d",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/9808e75c609a14f6db02f70fccf4ca4aab53c160",
+                "reference": "9808e75c609a14f6db02f70fccf4ca4aab53c160",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3"
+                "php": ">=5.3.9"
             },
             "require-dev": {
                 "symfony/phpunit-bridge": "~2.7"
@@ -1433,11 +1434,11 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.6-dev"
+                    "dev-master": "2.7-dev"
                 }
             },
             "autoload": {
-                "psr-0": {
+                "psr-4": {
                     "Symfony\\Component\\Yaml\\": ""
                 }
             },
@@ -1447,17 +1448,17 @@
             ],
             "authors": [
                 {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                },
-                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
                 }
             ],
             "description": "Symfony Yaml Component",
-            "homepage": "http://symfony.com",
-            "time": "2015-03-12 10:28:44"
+            "homepage": "https://symfony.com",
+            "time": "2015-06-10 15:30:22"
         }
     ],
     "aliases": [],
